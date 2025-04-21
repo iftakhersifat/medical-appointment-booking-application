@@ -26,10 +26,15 @@ const router = createBrowserRouter([
       {
         path: "doctor/:doctorDetails",
         loader: async ({ params }) => {
-          const res = await fetch("/data.json"); // fetch full data.json
-          const data = await res.json();          // get array
-          const doctor = data.find(item => item.id === parseInt(params.doctorDetails)); // find doctor
-          return doctor; // return only one doctor
+          const res = await fetch("/data.json");
+          const data = await res.json();
+          const doctor = data.find(item => item.id === parseInt(params.doctorDetails));
+          
+          if (!doctor) {
+            return null; // Return null if doctor not found
+          }
+      
+          return doctor;
         },
         
         Component: Doctor,

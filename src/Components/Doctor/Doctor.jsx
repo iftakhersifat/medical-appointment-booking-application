@@ -5,10 +5,27 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Doctor = () => {
     const details = useLoaderData();
+    const navigate = useNavigate();
+
+    // If doctor details are not found, show 404 page
+    if (!details) {
+        return (
+            <div className="mt-32 text-center">
+                <h1 className="text-4xl font-bold text-red-500">Doctor Not Found</h1>
+                <p className="text-lg mt-4">Sorry, the doctor you're looking for doesn't exist.</p>
+                <button
+                    onClick={() => navigate('/')}
+                    className="mt-6 px-6 py-2 border-2 border-[#176AE5] bg-[#176AE5] text-white rounded-full hover:bg-blue-600"
+                >
+                    Go to Homepage
+                </button>
+            </div>
+        );
+    }
+
     const { id, speciality, image, name, education, working_at, registration_number, availability, consultation_fee } = details;
 
     const [isAlreadyBooked, setIsAlreadyBooked] = useState(false);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const bookedDoctors = JSON.parse(localStorage.getItem('bookedDoctors')) || [];
@@ -27,7 +44,6 @@ const Doctor = () => {
             return;
         }
 
-      
         bookedDoctors.push(id);
         localStorage.setItem('bookedDoctors', JSON.stringify(bookedDoctors));
         toast.success(`Successfully booked appointment with Dr. ${name}`, {

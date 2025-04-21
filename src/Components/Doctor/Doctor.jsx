@@ -56,7 +56,19 @@ const Doctor = () => {
            </div>
            </div>
 
+           <div className='border-2 border-white bg-white rounded-2xl mt-8 mb-8 p-12'>
+                <h1 className="text-4xl max-w-3xl mx-auto text-center font-bold text-gray-900 mb-6">
+                Book an Appointment
+                </h1>
+                <p className='border-t-1 border-dashed'></p>
+                <h1 className='font-bold flex gap-4 mt-3 mb-3'>Availability</h1>
+                <p className='border-t-1 border-dashed'></p>
+
+                <button className="btn text-[#176AE5] mt-8 border-1 border-[#176AE5] rounded-full w-full bg-[#176AE5] text-white">Book Appointment Now</button>
+                </div>
         </div>
+
+        
         </div>
     );
 };

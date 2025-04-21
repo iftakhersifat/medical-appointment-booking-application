@@ -7,9 +7,9 @@
     "speciality": "Cardiologist",
     "experience": "10 years",
     "registration_number": "Reg No : BD123456",
-    "available": true,
     "working_at": "Heart Care Hospital",
-    "availability": ["Monday", "Wednesday", "Friday"]
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "consultation_fee": "Taka : 273 (incl. VAT) Per consultation"
   },
   {
     "id": 2,
@@ -19,9 +19,9 @@
     "speciality": "Orthopedic Surgeon",
     "experience": "12 years",
     "registration_number": "Reg No : BD654321",
-    "available": false,
     "working_at": "Bone and Joint Clinic",
-    "availability": ["Tuesday", "Thursday"]
+    "availability": ["Tuesday", "Thursday"],
+    "consultation_fee": "Taka : 320 (incl. VAT) Per consultation"
   },
   {
     "id": 3,
@@ -31,9 +31,9 @@
     "speciality": "Gynecologist",
     "experience": "8 years",
     "registration_number": "Reg No : BD112233",
-    "available": true,
     "working_at": "Women's Health Center",
-    "availability": ["Monday", "Thursday", "Saturday"]
+    "availability": ["Monday", "Thursday", "Saturday"],
+    "consultation_fee": "Taka : 250 (incl. VAT) Per consultation"
   },
   {
     "id": 4,
@@ -43,9 +43,9 @@
     "speciality": "General Surgeon",
     "experience": "15 years",
     "registration_number": "Reg No : BD223344",
-    "available": false,
     "working_at": "City Hospital",
-    "availability": ["Wednesday", "Saturday"]
+    "availability": ["Wednesday", "Saturday"],
+    "consultation_fee": "Taka : 300 (incl. VAT) Per consultation"
   },
   {
     "id": 5,
@@ -55,9 +55,9 @@
     "speciality": "Pediatrician",
     "experience": "7 years",
     "registration_number": "Reg No : BD334455",
-    "available": true,
     "working_at": "Children's Medical Center",
-    "availability": ["Sunday", "Tuesday", "Thursday"]
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "consultation_fee": "Taka : 260 (incl. VAT) Per consultation"
   },
   {
     "id": 6,
@@ -67,9 +67,9 @@
     "speciality": "Dermatologist",
     "experience": "9 years",
     "registration_number": "Reg No : BD445566",
-    "available": true,
     "working_at": "Skin Care Clinic",
-    "availability": ["Monday", "Wednesday", "Friday"]
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "consultation_fee": "Taka : 270 (incl. VAT) Per consultation"
   },
   {
     "id": 7,
@@ -79,9 +79,9 @@
     "speciality": "ENT Specialist",
     "experience": "11 years",
     "registration_number": "Reg No : BD556677",
-    "available": false,
     "working_at": "ENT Hospital",
-    "availability": ["Tuesday", "Friday"]
+    "availability": ["Tuesday", "Friday"],
+    "consultation_fee": "Taka : 290 (incl. VAT) Per consultation"
   },
   {
     "id": 8,
@@ -91,9 +91,9 @@
     "speciality": "Psychiatrist",
     "experience": "13 years",
     "registration_number": "Reg No : BD667788",
-    "available": true,
     "working_at": "Mind Wellness Center",
-    "availability": ["Monday", "Thursday", "Saturday"]
+    "availability": ["Monday", "Thursday", "Saturday"],
+    "consultation_fee": "Taka : 310 (incl. VAT) Per consultation"
   },
   {
     "id": 9,
@@ -103,9 +103,9 @@
     "speciality": "Ophthalmologist",
     "experience": "6 years",
     "registration_number": "Reg No : BD778899",
-    "available": true,
     "working_at": "Vision Eye Hospital",
-    "availability": ["Wednesday", "Friday", "Sunday"]
+    "availability": ["Wednesday", "Friday", "Sunday"],
+    "consultation_fee": "Taka : 280 (incl. VAT) Per consultation"
   },
   {
     "id": 10,
@@ -115,9 +115,9 @@
     "speciality": "Neurologist",
     "experience": "14 years",
     "registration_number": "Reg No : BD889900",
-    "available": false,
     "working_at": "Neuro Care Institute",
-    "availability": ["Tuesday", "Saturday"]
+    "availability": ["Tuesday", "Saturday"],
+    "consultation_fee": "Taka : 340 (incl. VAT) Per consultation"
   },
   {
     "id": 11,
@@ -127,9 +127,9 @@
     "speciality": "Endocrinologist",
     "experience": "10 years",
     "registration_number": "Reg No : BD990011",
-    "available": true,
     "working_at": "Endocrine Health Center",
-    "availability": ["Monday", "Wednesday", "Friday"]
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "consultation_fee": "Taka : 300 (incl. VAT) Per consultation"
   },
   {
     "id": 12,
@@ -139,8 +139,8 @@
     "speciality": "Urologist",
     "experience": "9 years",
     "registration_number": "Reg No : BD101112",
-    "available": true,
     "working_at": "Urology Specialist Hospital",
-    "availability": ["Sunday", "Tuesday", "Thursday"]
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "consultation_fee": "Taka : 275 (incl. VAT) Per consultation"
   }
 ]

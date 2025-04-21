@@ -25,6 +25,7 @@ const Doctors = ({doc}) => {
 
     <h2 className="card-title font-extrabold text-2xl">{name}</h2>
     <p>{education}</p>
+    
     <p className='border-t-1 border-dashed'></p>
     
     <p className='flex gap-2 mb-4'>

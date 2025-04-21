@@ -10,7 +10,8 @@ const Home = () => {
   const visibleDoctors = showAll ? data : data.slice(0, 6);
 
   return (
-    <div className='container mx-auto'>
+    <div className='bg-gray-100'>
+      <div className='container mx-auto mb-8'>
       <Banner />
 
       <h1 className="text-4xl max-w-3xl mx-auto text-center font-bold text-gray-900 mb-6 mt-18">
@@ -71,6 +72,8 @@ const Home = () => {
 
 
 
+
+    </div>
 
     </div>
   );

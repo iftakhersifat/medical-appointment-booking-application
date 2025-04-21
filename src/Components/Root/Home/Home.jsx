@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../../Banner/Banner';
 import { useLoaderData } from 'react-router';
+import Doctors from '../../Doctors/Doctors';
 
 const Home = () => {
     const data =useLoaderData();
@@ -16,9 +17,12 @@ const Home = () => {
           Whether it’s a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
         </p>
 
-        <div>
-
+        <div className="grid grid-cols-3 gap-4">
+            {
+                data.map(doc=><Doctors key={doc.registration_number} doc={doc}></Doctors>)
+            }
         </div>
+
         </div>
     );
 };

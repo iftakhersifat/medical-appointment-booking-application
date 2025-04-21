@@ -1,6 +1,6 @@
 [
     {
-      "image": "doctor1.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Sarah Johnson",
       "education": "MBBS, MD (Cardiology)",
       "speciality": "Cardiologist",
@@ -9,7 +9,7 @@
       "available": true
     },
     {
-      "image": "doctor2.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Amit Verma",
       "education": "MBBS, MS (Orthopedics)",
       "speciality": "Orthopedic Surgeon",
@@ -18,7 +18,7 @@
       "available": false
     },
     {
-      "image": "doctor3.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Emily Chen",
       "education": "MBBS, DGO (Gynecology)",
       "speciality": "Gynecologist",
@@ -27,7 +27,7 @@
       "available": true
     },
     {
-      "image": "doctor4.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. David Lee",
       "education": "MBBS, MS (General Surgery)",
       "speciality": "General Surgeon",
@@ -36,7 +36,7 @@
       "available": false
     },
     {
-      "image": "doctor5.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Ananya Roy",
       "education": "MBBS, MD (Pediatrics)",
       "speciality": "Pediatrician",
@@ -45,7 +45,7 @@
       "available": true
     },
     {
-      "image": "doctor6.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Michael Smith",
       "education": "MBBS, MD (Dermatology)",
       "speciality": "Dermatologist",
@@ -54,7 +54,7 @@
       "available": true
     },
     {
-      "image": "doctor7.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Priya Nair",
       "education": "MBBS, MS (ENT)",
       "speciality": "ENT Specialist",
@@ -63,7 +63,7 @@
       "available": false
     },
     {
-      "image": "doctor8.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. John Carter",
       "education": "MBBS, MD (Psychiatry)",
       "speciality": "Psychiatrist",
@@ -72,7 +72,7 @@
       "available": true
     },
     {
-      "image": "doctor9.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Ritu Sharma",
       "education": "MBBS, DNB (Ophthalmology)",
       "speciality": "Ophthalmologist",
@@ -81,7 +81,7 @@
       "available": true
     },
     {
-      "image": "doctor10.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Thomas Walker",
       "education": "MBBS, MD (Neurology)",
       "speciality": "Neurologist",
@@ -90,7 +90,7 @@
       "available": false
     },
     {
-      "image": "doctor11.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Sofia Martinez",
       "education": "MBBS, DM (Endocrinology)",
       "speciality": "Endocrinologist",
@@ -99,7 +99,7 @@
       "available": true
     },
     {
-      "image": "doctor12.jpg",
+      "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Arjun Patel",
       "education": "MBBS, MS (Urology)",
       "speciality": "Urologist",

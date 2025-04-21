@@ -3,7 +3,8 @@ import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div className='container mx-auto'>
+        <div className='bg-gray-100 '>
+          <div className='container mx-auto'>
             <div className="navbar mt-8">
   <div className="navbar-start">
     <div className="dropdown">
@@ -58,6 +59,7 @@ const Navbar = () => {
     <a className="btn bg-[#176AE5] rounded-full font-bold text-white">Emergency</a>
   </div>
 </div>
+        </div>
         </div>
     );
 };

@@ -10,7 +10,7 @@ const Home = () => {
   const visibleDoctors = showAll ? data : data.slice(0, 6);
 
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-gray-100 p-2'>
       <div className='container mx-auto mb-8'>
       <Banner />
 

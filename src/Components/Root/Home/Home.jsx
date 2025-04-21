@@ -21,7 +21,7 @@ const Home = () => {
         Whether it’s a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 px-12">
         {visibleDoctors.map(doc => (
           <Doctors key={doc.registration_number} doc={doc} />
         ))}

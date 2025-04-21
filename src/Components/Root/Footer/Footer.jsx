@@ -15,7 +15,7 @@ const Footer = () => {
 
         <NavLink  className={({ isActive }) =>
         isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
-        } to="/myBookings">My-Bookings</NavLink>
+        } to="/booking">My-Bookings</NavLink>
 
         <NavLink  className={({ isActive }) =>
         isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"

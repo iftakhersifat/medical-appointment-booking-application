@@ -13,6 +13,7 @@ import Doctor from './Components/Doctor/Doctor.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Booking from './Components/Doctor/booking.jsx';
+import NotFound from './Components/NotFound/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,12 +38,13 @@ const router = createBrowserRouter([
       {
         path: "/booking/:id",
         Component: Booking
-      }
+      },
+      
     ]
   },
   {
     path:"*",
-    element: <h1 className='mt-96 text-center font-bold text-red-500'>404 error : not found</h1>
+    element: <NotFound></NotFound>
   }
 ]);
 

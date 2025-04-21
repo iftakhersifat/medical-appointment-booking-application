@@ -10,7 +10,6 @@ const Doctor = () => {
     const [isAlreadyBooked, setIsAlreadyBooked] = useState(false);
     const navigate = useNavigate();
 
-    // যখন কম্পোনেন্ট লোড হবে তখন চেক করবো বুকিং করা আছে কিনা
     useEffect(() => {
         const bookedDoctors = JSON.parse(localStorage.getItem('bookedDoctors')) || [];
         if (bookedDoctors.includes(id)) {
@@ -28,7 +27,7 @@ const Doctor = () => {
             return;
         }
 
-        // নতুন বুকিং করতেছি
+      
         bookedDoctors.push(id);
         localStorage.setItem('bookedDoctors', JSON.stringify(bookedDoctors));
         toast.success(`Successfully booked appointment with Dr. ${name}`, {

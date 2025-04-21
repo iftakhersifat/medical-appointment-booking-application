@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Banner from '../../Banner/Banner';
 import { useLoaderData } from 'react-router';
 import Doctors from '../../Doctors/Doctors';
+import CountUpSection from '../../CountUp/CountUp';
 
 const Home = () => {
   const data = useLoaderData();
@@ -43,32 +44,7 @@ const Home = () => {
       Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. 
       </p>
 
-      <div className='mb-12 grid md:grid-cols-4  p-12 md:p-0 md:gap-6 gap-4'>
-        {/* 1st */}
-        <div className='flex rounded-xl card bg-base-100 shadow-sm p-6 space-y-4 lg:w-[300px] md:w-[160px]'>
-          <img src="/public/C001-assets/success-doctor.png" className='w-16'  />
-          <h1 className='font-bold text-5xl'>199+</h1>
-          <p className='text-gray-500'>Total Doctors</p>
-        </div>
-        {/* 2nd */}
-        <div className='flex rounded-xl card bg-base-100 shadow-sm p-6 space-y-4 lg:w-[300px] md:w-[160px] lg:ml-16'>
-          <img src="/public/C001-assets/success-review.png" className='w-16'  />
-          <h1 className='font-bold text-5xl'>467+</h1>
-          <p className='text-gray-500'>Total Reviews</p>
-        </div>
-        {/* 3rd */}
-        <div className='flex rounded-xl card bg-base-100 shadow-sm p-6 space-y-4 lg:w-[300px] md:w-[160px] lg:ml-16'>
-          <img src="/public/C001-assets/success-patients.png" className='w-16'  />
-          <h1 className='font-bold text-5xl'>1900+</h1>
-          <p className='text-gray-500'>Patients</p>
-        </div>
-        {/* 4th */}
-        <div className='flex rounded-xl card bg-base-100 shadow-sm p-6 space-y-4 lg:w-[300px] md:w-[160px] lg:ml-16'>
-          <img src="/public/C001-assets/success-staffs.png" className='w-16'  />
-          <h1 className='font-bold text-5xl'>300+</h1>
-          <p className='text-gray-500'>Total Stuffs</p>
-        </div>
-      </div>
+      <CountUpSection></CountUpSection>
 
 
 

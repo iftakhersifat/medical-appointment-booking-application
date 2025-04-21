@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, LabelList } from 'recharts';
 
-const doctorsData = [
+const doctorsData = [ 
+  // (Same doctorsData array you already have)
   {
     "id": 1,
     "image": "../public/C001-assets/doctor-sample.png",
@@ -170,6 +172,12 @@ const Booking = () => {
     navigate('/');
   };
 
+  // Transform data for Recharts
+  const chartData = bookedAppointments.map(doctor => ({
+    name: doctor.name.split(' ')[1], // show only first name (optional tweak)
+    fee: Number(doctor.consultation_fee.match(/\d+/)?.[0] || 0) // extract number from "Taka : 273 (incl. VAT)"
+  }));
+
   return (
     <div className='bg-gray-100 p-2'>
       <div className="container mx-auto">
@@ -193,31 +201,50 @@ const Booking = () => {
             </button>
           </div>
         ) : (
-          <div className='space-y-8 mt-8'>
-            {bookedAppointments.map((doctor) => (
-              <div key={doctor.id} className='border-2 border-white bg-white rounded-2xl p-8'>
-                <h1 className='text-2xl font-bold mb-4'>{doctor.name}</h1>
+          <>
+            {/* Chart Section */}
+            <div className='border-2 border-white bg-white rounded-2xl p-8 mb-12'>
+              <h2 className="text-2xl font-bold mb-6 text-center">Consultation Fee Chart</h2>
+              <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                  <Bar dataKey="fee" fill="#176AE5" radius={[10, 10, 0, 0]}>
+                    <LabelList dataKey="fee" position="top" />
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
 
-                <div className='flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0'>
-                  <div>
-                    <p><span className='font-semibold'>Education:</span> {doctor.education}</p>
-                    <p><span className='font-semibold'>Speciality:</span> {doctor.speciality}</p>
+            {/* Booked Appointments List */}
+            <div className='space-y-8 mt-8'>
+              {bookedAppointments.map((doctor) => (
+                <div key={doctor.id} className='border-2 border-white bg-white rounded-2xl p-8'>
+                  <h1 className='text-2xl font-bold mb-4'>{doctor.name}</h1>
+
+                  <div className='flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0'>
+                    <div>
+                      <p><span className='font-semibold'>Education:</span> {doctor.education}</p>
+                      <p><span className='font-semibold'>Speciality:</span> {doctor.speciality}</p>
+                    </div>
+
+                    <div>
+                      <p><span className='font-semibold'>Consultation Fee:</span> {doctor.consultation_fee}</p>
+                    </div>
                   </div>
 
-                  <div>
-                    <p><span className='font-semibold'>Consultation Fee:</span> {doctor.consultation_fee}</p>
-                  </div>
+                  <button
+                    onClick={() => handleCancel(doctor.id)}
+                    className="btn text-[#FF0000] mt-6 border-2 border-[#FF0000] rounded-full w-full hover:bg-[#FF0000] hover:text-white"
+                  >
+                    Cancel Appointment
+                  </button>
                 </div>
-
-                <button
-                  onClick={() => handleCancel(doctor.id)}
-                  className="btn text-[#FF0000] mt-6 border-2 border-[#FF0000] rounded-full w-full hover:bg-[#FF0000] hover:text-white"
-                >
-                  Cancel Appointment
-                </button>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </>
         )}
       </div>
     </div>

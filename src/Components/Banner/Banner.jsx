@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="py-12 rounded-2xl container mx-auto mt-8 mb-8 px-6 md:px-12 shadow-md p-2">
+    <div className="py-12 rounded-2xl container mx-auto mt-8 mb-8 px-6 md:px-12 p-2 bg-gradient-to-b from-[#f5f5f5] to-white shadow-sm ">
       <div className="text-center max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
           Dependable Care, Backed by Trusted Professionals.

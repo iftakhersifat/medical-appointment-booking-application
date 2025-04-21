@@ -1,0 +1,111 @@
+[
+    {
+      "image": "doctor1.jpg",
+      "name": "Dr. Sarah Johnson",
+      "education": "MBBS, MD (Cardiology)",
+      "speciality": "Cardiologist",
+      "experience": "10 years",
+      "registration_number": "Reg No : BD123456",
+      "available": true
+    },
+    {
+      "image": "doctor2.jpg",
+      "name": "Dr. Amit Verma",
+      "education": "MBBS, MS (Orthopedics)",
+      "speciality": "Orthopedic Surgeon",
+      "experience": "12 years",
+      "registration_number": "Reg No : BD654321",
+      "available": false
+    },
+    {
+      "image": "doctor3.jpg",
+      "name": "Dr. Emily Chen",
+      "education": "MBBS, DGO (Gynecology)",
+      "speciality": "Gynecologist",
+      "experience": "8 years",
+      "registration_number": "Reg No : BD112233",
+      "available": true
+    },
+    {
+      "image": "doctor4.jpg",
+      "name": "Dr. David Lee",
+      "education": "MBBS, MS (General Surgery)",
+      "speciality": "General Surgeon",
+      "experience": "15 years",
+      "registration_number": "Reg No : BD223344",
+      "available": false
+    },
+    {
+      "image": "doctor5.jpg",
+      "name": "Dr. Ananya Roy",
+      "education": "MBBS, MD (Pediatrics)",
+      "speciality": "Pediatrician",
+      "experience": "7 years",
+      "registration_number": "Reg No : BD334455",
+      "available": true
+    },
+    {
+      "image": "doctor6.jpg",
+      "name": "Dr. Michael Smith",
+      "education": "MBBS, MD (Dermatology)",
+      "speciality": "Dermatologist",
+      "experience": "9 years",
+      "registration_number": "Reg No : BD445566",
+      "available": true
+    },
+    {
+      "image": "doctor7.jpg",
+      "name": "Dr. Priya Nair",
+      "education": "MBBS, MS (ENT)",
+      "speciality": "ENT Specialist",
+      "experience": "11 years",
+      "registration_number": "Reg No : BD556677",
+      "available": false
+    },
+    {
+      "image": "doctor8.jpg",
+      "name": "Dr. John Carter",
+      "education": "MBBS, MD (Psychiatry)",
+      "speciality": "Psychiatrist",
+      "experience": "13 years",
+      "registration_number": "Reg No : BD667788",
+      "available": true
+    },
+    {
+      "image": "doctor9.jpg",
+      "name": "Dr. Ritu Sharma",
+      "education": "MBBS, DNB (Ophthalmology)",
+      "speciality": "Ophthalmologist",
+      "experience": "6 years",
+      "registration_number": "Reg No : BD778899",
+      "available": true
+    },
+    {
+      "image": "doctor10.jpg",
+      "name": "Dr. Thomas Walker",
+      "education": "MBBS, MD (Neurology)",
+      "speciality": "Neurologist",
+      "experience": "14 years",
+      "registration_number": "Reg No : BD889900",
+      "available": false
+    },
+    {
+      "image": "doctor11.jpg",
+      "name": "Dr. Sofia Martinez",
+      "education": "MBBS, DM (Endocrinology)",
+      "speciality": "Endocrinologist",
+      "experience": "10 years",
+      "registration_number": "Reg No : BD990011",
+      "available": true
+    },
+    {
+      "image": "doctor12.jpg",
+      "name": "Dr. Arjun Patel",
+      "education": "MBBS, MS (Urology)",
+      "speciality": "Urologist",
+      "experience": "9 years",
+      "registration_number": "Reg No : BD101112",
+      "available": true
+    }
+  ]
+  

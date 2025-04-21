@@ -3,7 +3,7 @@
       "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Sarah Johnson",
       "education": "MBBS, MD (Cardiology)",
-      "speciality": "Cardiologist",
+      "speciality": "5+ Years Experience",
       "experience": "10 years",
       "registration_number": "Reg No : BD123456",
       "available": true
@@ -12,7 +12,7 @@
       "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Amit Verma",
       "education": "MBBS, MS (Orthopedics)",
-      "speciality": "Orthopedic Surgeon",
+      "speciality": "5+ Years Experience",
       "experience": "12 years",
       "registration_number": "Reg No : BD654321",
       "available": false
@@ -30,7 +30,7 @@
       "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. David Lee",
       "education": "MBBS, MS (General Surgery)",
-      "speciality": "General Surgeon",
+      "speciality": "General Surgeon", 
       "experience": "15 years",
       "registration_number": "Reg No : BD223344",
       "available": false
@@ -39,7 +39,7 @@
       "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Ananya Roy",
       "education": "MBBS, MD (Pediatrics)",
-      "speciality": "Pediatrician",
+      "speciality": "Pediatrician", 
       "experience": "7 years",
       "registration_number": "Reg No : BD334455",
       "available": true
@@ -57,7 +57,7 @@
       "image": "../public/C001-assets/doctor-sample.png",
       "name": "Dr. Priya Nair",
       "education": "MBBS, MS (ENT)",
-      "speciality": "ENT Specialist",
+      "speciality": "ENT Specialist", 
       "experience": "11 years",
       "registration_number": "Reg No : BD556677",
       "available": false

@@ -1,15 +1,28 @@
 import React from 'react';
 
 const Doctors = ({doc}) => {
-    const {name, education, image, registration_number } =doc;
+    const {name, education, image, registration_number, speciality } =doc;
     return (
         <div className='container mx-auto'>
             <div className="card bg-base-100 w-96 shadow-sm">
   <figure>
     <img className='p-4' src={image} />
   </figure>
+
+
   <div className="card-body">
-    <h2 className="card-title">{name}</h2>
+  <div className="flex gap-2">
+  <p className="text-[#09982F] bg-green-50 border border-green-200 rounded-full text-center px-2 py-0.5">
+    Available
+  </p>
+  <p className="text-[#176AE5] bg-blue-50 border border-blue-200 rounded-full text-center px-2 py-0.5">
+    {speciality}
+  </p>
+</div>
+
+
+
+    <h2 className="card-title font-extrabold text-2xl">{name}</h2>
     <p>{education}</p>
     <p className='border-t-1 border-dashed'></p>
     

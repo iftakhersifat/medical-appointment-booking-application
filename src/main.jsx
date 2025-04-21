@@ -12,6 +12,7 @@ import Doctor from './Components/Doctor/Doctor.jsx';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Booking from './Components/Doctor/booking.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
         },
         
         Component: Doctor,
+      },
+
+      {
+        path: "/booking/:id",
+        Component: Booking
       }
     ]
   },

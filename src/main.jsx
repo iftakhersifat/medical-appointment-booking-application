@@ -17,6 +17,10 @@ const router = createBrowserRouter([
       {index: true, Component:Home}
     ]
   },
+  {
+    path:"*",
+    element: <h1 className='mt-96 text-center font-bold text-red-500'>404 error : not found</h1>
+  }
 ]);
 
 

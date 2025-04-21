@@ -14,6 +14,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Booking from './Components/Doctor/booking.jsx';
 import NotFound from './Components/NotFound/NotFound.jsx';
+import Contacts from './Components/Contacts/Contacts.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
           const doctor = data.find(item => item.id === parseInt(params.doctorDetails));
           
           if (!doctor) {
-            return null; // Return null if doctor not found
+            return null;
           }
       
           return doctor;
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
         path: "/booking/:id",
         Component: Booking
       },
+
+      {
+        path: "contactUs",
+        element: <Contacts></Contacts>, // Show Contact Not Found
+      }
       
     ]
   },

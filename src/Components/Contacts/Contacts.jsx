@@ -7,7 +7,8 @@ const Contacts = () => {
   return (
     <div>
       
-      <div className="mt-32 text-center">
+      <div className="mt-12 text-center">
+        <img className='max-w-3xl mx-auto w-[500px]' src="/public/C001-assets/oops-404-error.avif" />
         <h1 className="text-4xl font-bold text-red-500">404 Error: Contact Not Found</h1>
         <p className="text-lg mt-4">Sorry, the Contact page you are looking for does not exist.</p>
         <button

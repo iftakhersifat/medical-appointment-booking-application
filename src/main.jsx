@@ -10,6 +10,9 @@ import Root from './Components/Root/Root.jsx';
 import Home from './Components/Root/Home/Home.jsx';
 import Doctor from './Components/Doctor/Doctor.jsx';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,5 +45,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer position="top-right" />
   </StrictMode>,
 )

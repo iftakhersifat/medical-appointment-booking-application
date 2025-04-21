@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -12,20 +13,45 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
-        <li><a>My-Bookings</a></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>
+
+          <NavLink  className={({ isActive }) =>
+          isActive ? " border-b-2 border-blue-500 pb-1" : " hover:text-blue-400"
+          } to="/">Home</NavLink>
+
+          <NavLink  className={({ isActive }) =>
+          isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+          } to="/myBookings">My-Bookings</NavLink>
+
+          <NavLink  className={({ isActive }) =>
+          isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+          } to="/blogs">Blogs</NavLink>
+          
+          <NavLink  className={({ isActive }) =>
+          isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+          } to="/contactUs">Contact Us</NavLink>
+  
       </ul>
     </div>
     <h1 className="btn btn-ghost text-2xl font-bold"><img src="/public/C001-assets/logo.png" className='w-12'/>Phudu</h1>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-        <li><a>Home</a></li>
-        <li><a>My-Bookings</a></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>
+    <ul className="menu menu-horizontal px-1 gap-4">
+        
+          <NavLink  className={({ isActive }) =>
+          isActive ? " border-b-2 border-blue-500 pb-1" : " hover:text-blue-400"
+          } to="/">Home</NavLink>
+
+          <NavLink  className={({ isActive }) =>
+          isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+          } to="/myBookings">My-Bookings</NavLink>
+
+          <NavLink  className={({ isActive }) =>
+          isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+          } to="/blogs">Blogs</NavLink>
+          
+          <NavLink  className={({ isActive }) =>
+          isActive ? "text-blue-500 border-b-2 border-blue-500 pb-1" : "text-gray-600 hover:text-blue-400"
+          } to="/contactUs">Contact Us</NavLink>
     </ul>
   </div>
   <div className="navbar-end">

@@ -8,13 +8,25 @@ const Doctor = () => {
     return (
         <div className='bg-gray-100 p-2'>
             <div className='container mx-auto '>
+
+                <div className='border-2 border-white bg-white rounded-2xl mt-8 mb-8 py-4'>
+                <h1 className="text-4xl max-w-3xl mx-auto text-center font-bold text-gray-900 mb-6 mt-8">
+                 Doctor's Profile Details
+                </h1>
+                <p className="text-gray-500 mb-8 text-lg max-w-3xl mx-auto text-center p-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed facilis nisi aliquam voluptas explicabo necessitatibus magnam vel, animi numquam laboriosam!
+                </p>
+                </div>
            
+           {/* main details */}
            <div className='flex border-2 border-white bg-white rounded-2xl mt-8 mb-8'>
+            {/* for image setup */}
            <div className='w-[30%] p-12'>
             <img src={image} alt="" />
            </div>
 
-           <div className='w-[70%] py-12 space-y-4'>
+            {/* details setup */}
+           <div className='w-[70%] py-16 pr-12 space-y-7'>
            <h2 className="card-title font-extrabold text-2xl">{name}</h2>
            <p>{education}</p>
 

@@ -7,7 +7,7 @@ const Doctors = ({doc}) => {
         <div className='container mx-auto'>
             <div className="card bg-base-100 w-96 shadow-sm">
   <figure>
-    <img className='p-4' src={image} />
+    <img className='p-4 ' src={image}  />
   </figure>
 
 
@@ -25,7 +25,7 @@ const Doctors = ({doc}) => {
 
     <h2 className="card-title font-extrabold text-2xl">{name}</h2>
     <p>{education}</p>
-    
+
     <p className='border-t-1 border-dashed'></p>
     
     <p className='flex gap-2 mb-4'>
